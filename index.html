@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milestones in Computer History</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(-45deg, #0d0d0d, #1a1a1a, #000000, #111111);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      color: #00ffcc;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 20px #00ffcc;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    .milestone {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-in-out;
+    }
+
+    .milestone.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .milestone img {
+      width: 80%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+      margin-bottom: 20px;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 900px;
+      box-shadow: 0 0 20px #00ffcc;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .overlay:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px #00ffcc;
+    }
+
+    .overlay h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00ffcc;
+    }
+
+    .overlay p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Milestones in Computer History</h1>
+    <p>From the first machines to the digital age</p>
+  </header>
+
+  <section class="milestone">
+    <img src="001.jpg" alt="ENIAC">
+    <div class="overlay">
+      <h2>ENIAC – 1945</h2>
+      <p><strong>Brief Description:</strong> The ENIAC was the first general-purpose electronic computer, replacing electromechanical machines. It used thousands of vacuum tubes for calculation.</p>
+      <p><strong>Performance Impact:</strong> ENIAC could perform thousands of calculations per second, a massive leap compared to mechanical calculators. It proved that electronic systems could solve complex problems faster, laying the foundation for modern computing.</p>
+    </div>
+  </section>
+
+  <section class="milestone">
+    <img src="002.jpg" alt="Transistor">
+    <div class="overlay">
+      <h2>Transistor – 1947</h2>
+      <p><strong>Brief Description:</strong> The invention of the transistor replaced bulky vacuum tubes. It was smaller, faster, and consumed less power.</p>
+      <p><strong>Performance Impact:</strong> Transistors made computers more reliable, compact, and efficient. This innovation directly enabled the development of smaller computers and set the stage for integrated circuits.</p>
+    </div>
+  </section>
+
+  <section class="milestone">
+    <img src="003.jpg" alt="Integrated Circuit">
+    <div class="overlay">
+      <h2>Integrated Circuit – 1958</h2>
+      <p><strong>Brief Description:</strong> The integrated circuit combined multiple transistors into a single chip, replacing individual transistor setups.</p>
+      <p><strong>Performance Impact:</strong> ICs drastically reduced computer size and cost while boosting speed and efficiency. This milestone sparked the microelectronics revolution, powering everything from space missions to personal gadgets.</p>
+    </div>
+  </section>
+
+  <section class="milestone">
+    <img src="004.jpg" alt="Microprocessor">
+    <div class="overlay">
+      <h2>Microprocessor – 1971</h2>
+      <p><strong>Brief Description:</strong> Intel introduced the first microprocessor, combining CPU functions onto a single chip. It replaced complex multi-board processors.</p>
+      <p><strong>Performance Impact:</strong> Microprocessors made computers affordable and portable. This innovation powered the personal computer revolution, changing how people interacted with technology worldwide.</p>
+    </div>
+  </section>
+
+  <section class="milestone">
+    <img src="005.jpg" alt="Personal Computer">
+    <div class="overlay">
+      <h2>Personal Computer – 1981</h2>
+      <p><strong>Brief Description:</strong> IBM launched its first PC, making computing accessible to homes and offices. It replaced large mainframes for everyday use.</p>
+      <p><strong>Performance Impact:</strong> PCs revolutionized productivity, enabling word processing, spreadsheets, and early networking. This milestone marked the democratization of computing power.</p>
+    </div>
+  </section>
+
+  <section class="milestone">
+    <img src="006.jpg" alt="World Wide Web">
+    <div class="overlay">
+      <h2>World Wide Web – 1991</h2>
+      <p><strong>Brief Description:</strong> Tim Berners-Lee invented the World Wide Web, connecting information through hyperlinks. It replaced isolated computer systems.</p>
+      <p><strong>Performance Impact:</strong> The Web transformed computers into communication and knowledge-sharing platforms. It accelerated globalization, commerce, and digital culture.</p>
+    </div>
+  </section>
+
+  <section class="milestone">
+    <img src="007.jpg" alt="Smartphones">
+    <div class="overlay">
+      <h2>Smartphones – 2007</h2>
+      <p><strong>Brief Description:</strong> The iPhone introduced the modern smartphone, merging computing with mobile telephony. It replaced simple feature phones.</p>
+      <p><strong>Performance Impact:</strong> Smartphones placed powerful computing in users’ pockets. They reshaped daily life, from communication to commerce, and became the most widely used computing devices in history.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Milestones in Computer History | Project Demo</p>
+  </footer>
+
+  <script>
+    // Scroll animation
+    const milestones = document.querySelectorAll('.milestone');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      milestones.forEach(milestone => {
+        const rect = milestone.getBoundingClientRect();
+        if (rect.top < triggerBottom) {
+          milestone.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
